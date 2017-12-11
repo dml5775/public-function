@@ -31,3 +31,7 @@ function GetQueryString(name)
      var r = window.location.search.substr(1).match(reg);
      if(r!=null)return  unescape(r[2]); return null;
 }
+//时间补0 例如2017-12-1 10:5 /2017-12-01 10:05
+function Appendzero(obj){
+if (obj < 10) return "0" + obj; else return obj;
+}
