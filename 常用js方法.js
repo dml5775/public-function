@@ -35,3 +35,13 @@ function GetQueryString(name)
 function Appendzero(obj){
 if (obj < 10) return "0" + obj; else return obj;
 }
+//判断phone android
+function isClient(){
+var ua = navigator.userAgent.toLowerCase();	
+if (/iphone|ipad|ipod/.test(ua)) {
+    alert("iphone");	
+} else if (/android/.test(ua)) {
+    alert("android");	
+}
+     //navigator.userAgent.toLowerCase().indexOf('micromessenger')//判断是否易信
+}
